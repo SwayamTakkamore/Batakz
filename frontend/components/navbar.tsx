@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/resources" className="mr-5 hover:text-gray-900">Resources</Link>
-          <a className="mr-5 hover:text-gray-900">Test</a>
+          <Link href="/test" className="mr-5 hover:text-gray-900">Test</Link>
           <a className="mr-5 hover:text-gray-900">Open Up</a>
           <a className="mr-5 hover:text-gray-900">About us</a>
         </nav>

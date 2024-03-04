@@ -1,0 +1,47 @@
+/* styles/Home.module.css */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    padding: 5rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .questionContainer {
+    margin-bottom: 2rem;
+  }
+  
+  .question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .options {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .optionLabel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .radioInput {
+    margin-right: 0.5rem;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
