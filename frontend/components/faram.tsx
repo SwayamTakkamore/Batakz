@@ -61,10 +61,6 @@ export default function Faram() {
           ))}
         </form>
       </main>
-
-      <footer className={styles.footer}>
-        <p>© {new Date().getFullYear()} Mental Health Test</p>
-      </footer>
     </div>
   );
 }
