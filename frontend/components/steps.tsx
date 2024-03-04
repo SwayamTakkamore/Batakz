@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero(): JSX.Element {
   return (
-<section className="text-gray-600 body-font">
+<section className="text-gray-600 body-font  bg-gray-100">
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     <div className="flex flex-wrap w-full">
       <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
@@ -77,7 +77,7 @@ export default function Hero(): JSX.Element {
           </div>
         </div>
       </div>
-      <img className="lg:w-3/5 md:w-1/2 object-center rounded-lg md:mt-0 mt-12 object-scale-down " src="https://conscientiamd.com/wp-content/uploads/2023/09/image-1-1.png" alt="step"/>
+      <img className="lg:w-3/5 md:w-1/2 object-center rounded-2xl md:mt-0 mt-12 object-scale-down" src="https://conscientiamd.com/wp-content/uploads/2023/09/image-1-1.png" alt="step"/>
     </div>
   </div>
 </section>

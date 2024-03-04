@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar";
-import Faram from "@/components/faram";
+import Faram from "@/components/questions";
 import Footer from "@/components/footer";
 
 export default function Home(): JSX.Element {

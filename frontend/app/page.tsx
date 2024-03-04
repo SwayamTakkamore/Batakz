@@ -3,11 +3,11 @@ import Hero from "@/components/hero";
 import Articles from "@/components/articles";
 import Steps from "@/components/steps"
 import Footer from "@/components/footer";
-import Faram from "@/components/faram";
+import Faram from "@/components/questions";
 
 export default function Home(): JSX.Element {
   return (
-    <div style={{ backgroundColor: 'white'}}>
+    <div>
       <Navbar />
       <Hero />
       <Articles />
