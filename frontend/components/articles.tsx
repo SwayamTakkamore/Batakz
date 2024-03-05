@@ -13,28 +13,28 @@ export default function Articles(): JSX.Element {
     <div className="flex flex-wrap -m-4">
       <div className="xl:w-1/4 md:w-1/2 p-4">
         <div className="bg-gray-100 p-6 rounded-lg">
-          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"/>
+          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://www.sheknows.com/wp-content/uploads/2020/08/quick-mindfulness-tricks.png" alt="content"/>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Mindful Leadership</h2>
           <p className="leading-relaxed text-base">Research consistently shows that organizations led by mindful leaders witness improved employee well-being...</p>
         </div>
       </div>
       <div className="xl:w-1/4 md:w-1/2 p-4">
         <div className="bg-gray-100 p-6 rounded-lg">
-          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"/>
+          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://www.bhjustice.org/wp-content/uploads/2022/02/Health-worker.jpg" alt="content"/>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Intersection of Technology and Mental Health</h2>
           <p className="leading-relaxed text-base">The ethical dimensions of utilizing technology for mental health purposes are crucial to address...</p>
         </div>
       </div>
       <div className="xl:w-1/4 md:w-1/2 p-4">
         <div className="bg-gray-100 p-6 rounded-lg">
-          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"/>
+          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://miro.medium.com/v2/resize:fit:1400/1*_lK-JngdvFWiEqgWCkuckQ.jpeg" alt="content"/>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Beyond the Surface</h2>
           <p className="leading-relaxed text-base">Visual arts, such as painting and drawing, provide a canvas for self-discovery and concluded by the scientist that...</p>
         </div>
       </div>
       <div className="xl:w-1/4 md:w-1/2 p-4">
         <div className="bg-gray-100 p-6 rounded-lg">
-          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"/>
+          <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://res.cloudinary.com/ekincare/image/upload/t_blog-large-img/v1690961650/aeynx5exxq8a5ly5oayj.png" alt="content"/>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Cultivating Emotional Intelligence</h2>
           <p className="leading-relaxed text-base">Cultivating emotional intelligence is a dynamic and ongoing process and  This section provides practical  strategies for nurturing EI in everyday life,...</p>
         </div>

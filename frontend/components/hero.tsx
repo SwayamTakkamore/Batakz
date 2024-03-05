@@ -5,7 +5,7 @@ export default function Hero(): JSX.Element {
   return (
 <section className="text-gray-600 body-font  bg-gray-100">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://rashcasm.github.io/jij/art3.png"/>
+    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded transform transition-transform duration-500 ease-in-out hover:rotate-180" alt="hero" src="https://rashcasm.github.io/jij/art3.png"/>
     <div className="text-center lg:w-2/3 w-full">
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Jijivisha</h1>
       <h3 className="mb-8 leading-relaxed">Empowering Mental Wellness<br/>Through Connection</h3>
