@@ -64,7 +64,7 @@ const Navbar = () => {
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/resources" className="mr-5 hover:text-gray-900">Resources</Link>
           <Link href="/test" className="mr-5 hover:text-gray-900">Test</Link>
-          <a className="mr-5 hover:text-gray-900">Open Up</a>
+          <a href="https://swayamtakkamore.github.io/Batakz/frontend/openupthing/thoughts.html" className="mr-5 hover:text-gray-900">Open Up</a>
           <Link href="/aboutus" className="mr-5 hover:text-gray-900">About Us</Link>
         </nav>
         {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Profile
