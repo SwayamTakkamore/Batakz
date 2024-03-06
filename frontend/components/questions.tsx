@@ -157,6 +157,27 @@ const Faram = () => {
           {showScore && (
             <div className={styles.result}>
               Your total score is: {currentScore}
+              <h1 style={{fontWeight: "bold"}}>
+              {(() => {
+                let res = "";
+                if (currentScore <= -15) {
+                res = "You are mentally healthy";
+                } 
+                else if (currentScore <= -5) {
+                res = "You are almost mentally healthy, checkout Resources...";
+                } 
+                else if (currentScore <= 5) {
+                res = "You are mentally stable";
+                } 
+                else if (currentScore <= 15) {
+                res = "You need psychological support";
+                } 
+                else if (currentScore <= 20) {
+                res = "You need immediate Consultation";
+                }
+                return res;
+              })()}
+              </h1>
             </div>
           )}
         </form>
