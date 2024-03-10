@@ -35,6 +35,7 @@ import React, { useState } from 'react';
 import Sidebar from './sidebar';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,8 +43,9 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
+  const router = useRouter();
   return (
+
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" onClick={toggleSidebar}>
@@ -60,13 +62,13 @@ const Navbar = () => {
               draggable="false"
             />
           </div>
-          <Link href="/" className="ml-3 text-xl">Jijivisha</Link>
+          <button onClick={() => router.push("/")} className="ml-3 text-xl">Jijivisha</button>
         </div>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link href="/resources" className="mr-5 hover:text-gray-900">Resources</Link>
-          <Link href="/test" className="mr-5 hover:text-gray-900">Test</Link>
+          <button onClick={() => router.push("/resources")} className="mr-5 hover:text-gray-900">Resources</button>
+          <button onClick={() => router.push("/test")} className="mr-5 hover:text-gray-900">Test</button>
           <a href="https://swayamtakkamore.github.io/Batakz/frontend/openupthing/thoughts.html" className="mr-5 hover:text-gray-900">Open Up</a>
-          <Link href="/aboutus" className="mr-5 hover:text-gray-900">About Us</Link>
+          <button onClick={() => router.push("/aboutus")} className="mr-5 hover:text-gray-900">About Us</button>
         </nav>
         {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Profile
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
