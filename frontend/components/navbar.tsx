@@ -57,6 +57,7 @@ const Navbar = () => {
               width={45}
               height={45}
               alt="Picture of the author"
+              draggable="false"
             />
           </div>
           <Link href="/" className="ml-3 text-xl">Jijivisha</Link>
