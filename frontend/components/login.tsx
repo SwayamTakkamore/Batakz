@@ -102,8 +102,8 @@ export const Login: React.FC<LoginProps> = () => {
         <div>
             <section className="text-gray-600 body-font flex bg-gray-100">
                 <div className="container px-5 py-24 mx-auto flex align-middle absolute">
-                    <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-                        <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                    <div className="w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col mt-10 items-center">
+                        <h2 className="text-gray-900 text-2xl font-medium title-font mb-5">Login</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="relative mb-4">
                                 <label htmlFor="username" className="leading-7 text-sm text-gray-600">Username</label>
