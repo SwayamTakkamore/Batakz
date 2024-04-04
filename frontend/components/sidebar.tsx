@@ -39,10 +39,18 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       </div>
       <nav className="mt-6">
         <ul>
-          <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer"><Link href="/test">Test</Link></li>
-          <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer"><Link href="/services">Services</Link></li>
-          <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer"><Link href="/">Report</Link></li>
-          <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer"><Link href="/aboutus">About Us</Link></li>
+          <a href="/test">
+            <button className="py-2 px-4 hover:bg-gray-100 cursor-pointer w-full text-left">Test</button>
+          </a>
+          <a href="/services">
+            <button className="py-2 px-4 hover:bg-gray-100 cursor-pointer w-full text-left">Services</button>
+          </a>
+          <a href="/">
+            <button className="py-2 px-4 hover:bg-gray-100 cursor-pointer w-full text-left">Report</button>
+          </a>
+          <a href="/aboutus">
+            <button className="py-2 px-4 hover:bg-gray-100 cursor-pointer w-full text-left">About Us</button>
+          </a>
         </ul>
       </nav>
     </div>
