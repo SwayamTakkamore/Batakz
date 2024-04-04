@@ -18,9 +18,9 @@ export default function Footer(): JSX.Element {
             draggable="false"
             onClick={() => router.push("/")}
           />
-          <span className="ml-3 text-xl" onClick={() => router.push("/")}>Jijivisha</span>
+          <span className="ml-3 text-xl" onClick={() => router.push("/")}>Eunoia</span>
         </a>
-        <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" >© 2024 Jijivisha —
+        <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" >© 2024 Eunoia —
           <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@batakz</a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
