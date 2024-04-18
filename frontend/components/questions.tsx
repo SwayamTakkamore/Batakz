@@ -12,6 +12,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 1,
   },
   {
     text: "2. How often do individuals experience déjà vu?",
@@ -22,6 +23,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 2,
   },
   {
     text: "3. Do you often experience the \"fight or flight\" response in stressful situations?",
@@ -32,6 +34,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 3,
   },
   {
     text: "4. Do you sometimes exhibit signs of learned helplessness?",
@@ -42,6 +45,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 4,
   },
   {
     text: "5. How often do you engage in self-sabotaging behaviors?",
@@ -52,6 +56,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 5,
   },
   {
     text: "6. How common is it for you to experience intrusive thoughts?",
@@ -62,9 +67,10 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 6,
   },
   {
-    text: "7. Do you sometimes exhibit signs of OCD",
+    text: "7. Do you sometimes exhibit signs of OCD (Obsesive Compulsive Disorder)",
     scores: {
       always: 2,
       often: 1,
@@ -72,6 +78,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 7,
   },
   {
     text: "8. How often do you engage in risk-taking behaviors under peer pressure?",
@@ -82,6 +89,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 8,
   },
   {
     text: "9. Are you an introvert according to MBTI?",
@@ -92,6 +100,7 @@ const questions = [
       // rarely: -1,
       // no: -2,
     },
+    query: 9,
   },
   {
     text: "10. How often do you engage in risk-taking behaviors under peer pressure?",
@@ -102,6 +111,7 @@ const questions = [
       rarely: -1,
       'not at all': -2,
     },
+    query: 10,
   },
 
 ];
@@ -113,15 +123,14 @@ const Faram = () => {
 
   const currentQuestion = questions[currentQuestionIndex];
 
-  const handleOptionClick = (optionValue) => {
-    const score = currentQuestion.scores[optionValue];
+  const handleOptionClick = (optionValue: string) => {
+    const score = currentQuestion.scores[optionValue as keyof typeof currentQuestion.scores];
 
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentScore((prevScore) => prevScore + score);
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       setShowScore(true);
-      setCurrentScore((prevScore) => prevScore + score);
     }
   };
 

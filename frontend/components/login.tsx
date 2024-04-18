@@ -100,9 +100,9 @@ export const Login: React.FC<LoginProps> = () => {
 
     return (
         <div>
-            <section className="text-gray-600 body-font flex bg-gray-100">
-                <div className="container px-5 py-24 mx-auto flex align-middle absolute">
-                    <div className="w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col mt-10 items-center">
+            <section className="text-gray-600 body-font relative bg-gray-100">
+                <div className="container absolute flex flex-wrap flex-col mx-auto">
+                    <div className="w-1/2 bg-gray-100 rounded-lg lg:w-1/2 md:w-2/3 mx-auto p-14 flex flex-col items-center">
                         <h2 className="text-gray-900 text-2xl font-medium title-font mb-5">Login</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="relative mb-4">
